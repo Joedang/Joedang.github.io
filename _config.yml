@@ -1,0 +1,39 @@
+title:        Joe Shields
+tagline:      Hi there, I'm Joe Shields!
+description:  Joe's personal web page
+canonical:    http://Joedang.github.io
+url:          'http://Joedang.github.io'
+
+# Owner/author information
+owner:
+  name:           Joe Shields
+  avatar:         avatar.png
+  bio:            ""
+  email:          joedang100@gmail.com
+#  twitter:        pdxaerospace
+  github:         Joedang
+#  youtube:        PSASRockets
+  location:       "Portland, OR"
+
+exclude: ['Makefile', 'README.md']
+
+timezone:    America/Los_Angeles
+future:      true
+markdown:    kramdown
+kramdown:
+  toc_levels: "1,2,3,4,5"
+
+sass:
+    style: :compressed
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Resume
+    url: /resume.html
+  - title: CV
+    url: /CV.html
+  - title: Portfolio
+    url: /portfolio.md
