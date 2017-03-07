@@ -1,0 +1,56 @@
+#sponsor-list:after {
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+#sponsor-list li { list-style: none; @include column(2); }
+#sponsor-list li img { width: 100%; height: auto; }
+
+.list-with-icons li { list-style: none !important; margin-left: 25px !important; }
+.list-with-icons img { width: 1.0em; margin-bottom: -0.15em; margin-right: 15px; }
+
+table { margin-bottom: 1.0em; }
+table td { padding-right: 2.0em; padding-bottom: 0.14em; }
+table thead { border-bottom: 1px solid #ccc; }
+table th { font-weight: bold; padding-bottom: 0.14em; }
+
+#markdown-toc { list-style: none; margin-left: 1.0em; }
+#markdown-toc li {
+    list-style: none;
+    margin-left: 20px;
+    padding-left: 0;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+}
+
+#countdown {
+    font-size: 4.4em;
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    text-align: center;
+}
+
+.youtube {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    padding-top: 30px;
+    overflow: hidden;
+	height: 0;
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+article p img {
+    max-width: 100%;
+}
+
+.icon { height: 1.0em; margin-bottom: -0.15em; margin-right: 0.33em; }
