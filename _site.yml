@@ -1,0 +1,36 @@
+name: "joedang.github.io"
+include: [  ]
+exclude: [ "makefile", "README.md", "index.html" ]
+navbar:
+  title: "Joe Shields"
+  icon: fa-rocket
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Info"
+      menu:
+        - text: "Resume"
+          href: https://github.com/Joedang/Resume/raw/master/resume.pdf
+        - text: "Portfolio"
+          href: https://github.com/Joedang/Portfolio
+        - text: "Curriculum Vitae"
+          href: https://github.com/Joedang/Resume/raw/master/CV/CV.pdf
+    - text: "Contact"
+      menu:
+        - text: "personal email"
+          href: mailto:joedang100@gmail.com
+        - text: "PSU email"
+          href: mailto:shields6@pdx.edu
+        - text: "public key"
+          href: joedang100_publicKey.txt
+        - text: "LinkedIn"
+          href: https://www.linkedin.com/in/joe-shields
+        - text: "GitHub"
+          href: https://github.com/Joedang
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    theme: sandstone
+    type: inverse
+    mathjax: null
