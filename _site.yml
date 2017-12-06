@@ -1,6 +1,12 @@
 name: "joedang.github.io"
 include: [  ]
 exclude: [ "makefile", "README.md", "index.html" ]
+output_dir: "docs"
+output:
+  html_document:
+    theme: sandstone
+    type: inverse
+    mathjax: null
 navbar:
   title: "Joe Shields"
   icon: fa-rocket
@@ -29,8 +35,3 @@ navbar:
           href: https://github.com/Joedang
     - text: "About"
       href: about.html
-output:
-  html_document:
-    theme: sandstone
-    type: inverse
-    mathjax: null
