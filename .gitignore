@@ -1,2 +1,5 @@
 # vim swap files
 *.swp
+
+# Don't need to render README
+README.html

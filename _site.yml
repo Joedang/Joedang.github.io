@@ -1,7 +1,7 @@
 name: "joedang.github.io"
 include: [  ]
-exclude: [ "makefile", "README.md", "index.html" ]
-output_dir: "docs"
+exclude: [ "makefile", "README.md" ]
+output_dir: "."
 output:
   html_document:
     theme: sandstone
