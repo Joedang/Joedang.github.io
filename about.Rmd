@@ -1,0 +1,9 @@
+---
+title: "About joedang.github.io"
+---
+
+This site was made using the excellent [rmarkdown] library, and is hosted on [GitHub Pages][pages].
+
+
+[rmarkdown]: http://rmarkdown.rstudio.com/
+[pages]: https://pages.github.com/
