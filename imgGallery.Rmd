@@ -1,0 +1,16 @@
+## Images
+```{r imgArray, echo=FALSE, out.width = '33%'}
+imgNames <- list.files(path='img', pattern= '*.png|*.jpg', full.names=T)
+knitr::include_graphics(imgNames)
+```
+
+## Technical Drawings
+```{r cadArray, echo=FALSE}
+cadNames <- list.files(path='img', pattern= '*.pdf', full.names=T)
+pander::pander('[link name](link location)')
+for (dwgName in cadNames)
+{
+	link <- paste('[', dwgName, '](', dwgName, ')')
+	pander::pander(link)
+}
+```

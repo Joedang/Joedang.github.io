@@ -4,7 +4,8 @@ I'm a mechanical engineer/physicist who recently graduated from Portland State U
 I'm currently directing projects in the [Portland State Aerospace Society][psas] to develop an [all-composite rocket airframe][lv3] and the [structure][oresat-structure] for [Oregon's first satellite][oresat].
 I wrote a paper on it, which you can find in the proceedings of AIAA SPACE 2016 titled [Design and Manufacture of an Open-Hardware University Rocket Airframe using Carbon Fiber][lv3-paper].
 
-My interests include mathematical physics, interdisciplinary engineering, composites manufacturing, and music composition. I'm currently taking a gap year before grad school.
+My interests include mathematical physics, interdisciplinary engineering, composites manufacturing, and music composition. 
+I'm currently looking for employment or a master's program and putting together teams to fill my roles on the rocket and cubesat projects.
 
 ```{r, child="bulletin.Rmd"}
 ```

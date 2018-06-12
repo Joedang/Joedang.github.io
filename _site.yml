@@ -1,6 +1,6 @@
 name: "joedang.github.io"
 include: [  ]
-exclude: [ "makefile", "README.md" ]
+exclude: [ "makefile", "README.md", "pdfThumbnail.sh" ]
 output_dir: "."
 output:
   html_document:
@@ -22,6 +22,10 @@ navbar:
           href: https://github.com/Joedang/Portfolio
         - text: "Curriculum Vitae"
           href: https://github.com/Joedang/Resume/raw/master/CV/CV.pdf
+        - text: "Image Gallery"
+          href: imgGallery.html
+        - text: "CAD Gallery"
+          href: cadGallery.html
     - text: "Contact"
       menu:
         - text: "personal email"
