@@ -1,4 +1,5 @@
 all:
+	make thumbs
 	make site
 	make view
 
@@ -7,6 +8,9 @@ site:
 
 view:
 	python2 -m SimpleHTTPServer
+
+thumbs:
+	./pdfThumbnail.sh
 
 .PHONY: clean
 

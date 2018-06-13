@@ -1,16 +1,38 @@
 ## Images
 ```{r imgArray, echo=FALSE, out.width = '33%'}
 imgNames <- list.files(path='img', pattern= '*.png|*.jpg', full.names=T)
+imgNames <- gsub(' ', '%20', imgNames) # URL-escape spaces
 knitr::include_graphics(imgNames)
 ```
 
 ## Technical Drawings
-```{r cadArray, echo=FALSE}
+Click on a thumbnail to go to the full PDF.
+
+```{r cadArray, echo=F, out.width = '33%'}
+# grab the pathnames of the PDFs
 cadNames <- list.files(path='img', pattern= '*.pdf', full.names=T)
-pander::pander('[link name](link location)')
-for (dwgName in cadNames)
-{
-	link <- paste('[', dwgName, '](', dwgName, ')')
-	pander::pander(link)
-}
+cadNames <- gsub(" ", "%20", cadNames) # URL-escape spaces
+
+# form the PDF pathnames into the corresponding thumbnail pathnames
+cadNames_b <- basename(cadNames)
+cadNames_bne <- sub(".pdf$", "", cadNames_b, perl=T)
+thumbNames <- paste("img/thumbnail/", cadNames_bne, ".png", sep='')
+
+# form linked thumbnails like: <a href="drawingPathname"><img src="thumbnailPathname" width="33%"></a>
+# I do it this way because I really want to get more than one thumbnail on a line.
+# AFAICT, Markdown doesn't have a way to specify image width. HTML does though.
+links <- paste( '<a href=', cadNames, '><img src="', thumbNames, '" width="32%"></a>', sep='')
+
+# Collapse that array of strings into a single string.
+# This prevents pander from adding supurfluous commas and "and"s.
+links <- paste(links, collapse='\n')
+
+# display the linked thumbnails
+pander::pander(links)
+
+# This would be the way to do it in Markdown:
+# output linked thumbnails like: [![](thumbnailPathname)](drawingPathname)
+# links <- paste('[![](', thumbNames, ')](', cadNames, ') ', sep='')
+# pander::pander(links)
 ```
+

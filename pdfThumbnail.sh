@@ -12,7 +12,7 @@ do
 	echo stripped name of f:
 	echo $fbne
 	echo constructed command:
-	toExec='pdftocairo -png -singlefile "$f" img/thumbnail/"$fbne"'
+	toExec='pdftocairo -png -singlefile -scale-to 700 "$f" img/thumbnail/"$fbne"'
 	echo $toExec
 	echo
 	echo Executing command...
