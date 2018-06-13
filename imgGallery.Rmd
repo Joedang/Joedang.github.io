@@ -10,12 +10,12 @@ Click on a thumbnail to go to the full PDF.
 
 ```{r cadArray, echo=F, out.width = '33%'}
 # grab the pathnames of the PDFs
-cadNames <- list.files(path='img', pattern= '*.pdf', full.names=T)
+cadNames <- list.files(path='img', pattern= '*.pdf', full.names=T, ignore.case=T)
 cadNames <- gsub(" ", "%20", cadNames) # URL-escape spaces
 
 # form the PDF pathnames into the corresponding thumbnail pathnames
 cadNames_b <- basename(cadNames)
-cadNames_bne <- sub(".pdf$", "", cadNames_b, perl=T)
+cadNames_bne <- sub(".pdf$", "", cadNames_b, perl=T, ignore.case=T)
 thumbNames <- paste("img/thumbnail/", cadNames_bne, ".png", sep='')
 
 # form linked thumbnails like: <a href="drawingPathname"><img src="thumbnailPathname" width="33%"></a>
