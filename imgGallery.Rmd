@@ -2,6 +2,7 @@
 ```{r imgArray, echo=FALSE, out.width = '33%'}
 imgNames <- list.files(path='img', pattern= '*.png|*.jpg', full.names=T)
 imgNames <- gsub(' ', '%20', imgNames) # URL-escape spaces
+imgNames <- sample(imgNames) # shuffle the order of the images
 knitr::include_graphics(imgNames)
 ```
 
