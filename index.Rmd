@@ -5,7 +5,7 @@ I'm currently directing projects in the [Portland State Aerospace Society][psas]
 I wrote a paper on it, which you can find in the proceedings of AIAA SPACE 2016 titled [Design and Manufacture of an Open-Hardware University Rocket Airframe using Carbon Fiber][lv3-paper].
 
 My interests include mathematical physics, interdisciplinary engineering, composites manufacturing, and music composition. 
-I'm currently looking for employment or a master's program and putting together teams to fill my roles on the rocket and cubesat projects.
+I'm currently looking for employment or a master's program.
 
 ```{r, child="bulletin.Rmd"}
 ```
