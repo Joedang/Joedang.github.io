@@ -91,8 +91,14 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -108,7 +114,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -128,6 +133,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -149,18 +191,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -250,12 +351,8 @@ $(document).ready(function () {
 
 <div id="hi-there-im-joe-shields." class="section level1">
 <h1>Hi there, I’m Joe Shields. <img src="../img/LV3.0_selfie.jpg" align="right" width="32%"></h1>
-<p>I’m a mechanical engineer/physicist who recently graduated from Portland State University. I’m the mechanical lead for a number of small engineering groups in the Portland area. These include: <a href="http://oresat.org">Oregon’s first satellite</a>, OreSat; the <a href="http://psas.pdx.edu">Portland State Aerospace Society</a>’s <a href="https://github.com/psas/lv3.0-airframe">all-composite rocket airframe</a>; and <a href="http://pacificdt.com/">Pacific Diabetes Technologies</a>. I also volunteer for PSU’s <a href="https://psu-epl.github.io/">Electronics Prototyping Lab</a>.</p>
-<p>I’m searching for a full-time role where I can use and grow my professional skills. I’m passionate about aerospace, interdisciplinary engineering, and open source technology.</p>
-<!--
-[structure][oresat-structure]
-I wrote a paper on it, which you can find in the proceedings of AIAA SPACE 2016 titled [Design and Manufacture of an Open-Hardware University Rocket Airframe using Carbon Fiber][lv3-paper].
--->
+<p>I’m a new manufacturing engineer at SpaceX, working on the mechanisms for Dragon 2.</p>
+<p>I got Bachelor’s degrees in mechanical engineering and physics from Portland State University. After that, I was the mechanical lead for a number of small engineering groups in the Portland area. These include: <a href="http://oresat.org">Oregon’s first satellite</a>, OreSat; the <a href="http://psas.pdx.edu">Portland State Aerospace Society</a>’s <a href="https://github.com/psas/lv3.0-airframe">all-composite rocket airframe</a>; and <a href="http://pacificdt.com/">Pacific Diabetes Technologies</a>. I also volunteered for PSU’s <a href="https://psu-epl.github.io/">Electronics Prototyping Lab</a>. I’m passionate about aerospace, interdisciplinary engineering, and open source technology.</p>
 <div id="section" class="section level3">
 <h3></h3>
 </div>
