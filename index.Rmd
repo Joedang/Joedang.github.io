@@ -1,14 +1,15 @@
-# Hi there, I'm Joe Shields.  <img src="../img/LV3.0_selfie.jpg" align="right" width="32%">
+# Hi there, I'm Joe Shields.  <img src="../img/LV3.0_selfie.jpg" align="left" width="32%">
 
-I'm a new manufacturing engineer at SpaceX, working on the mechanisms for Dragon 2. 
+I'm an engineer with a broad skill set looking for work in the Pacific Northwest.
 
-I got Bachelor's degrees in mechanical engineering and physics from Portland State University.
-After that, I was the mechanical lead for a number of small engineering groups in the Portland area.
+I just left a manufacturing engineer role at SpaceX, working on the [docking system][docker] for [Dragon 2][D2]. 
+I was the mechanical lead for a number of small engineering groups in the Portland area.
 These include: 
-[Oregon's first satellite][oresat], OreSat; 
-the [Portland State Aerospace Society][psas]'s [all-composite rocket airframe][lv3]; 
+[Oregon's first satellite][oresat], 
+the [Portland State Aerospace Society][psas]'s [all-composite rocket airframe][lv3],
 and [Pacific Diabetes Technologies][pdt].
 I also volunteered for PSU's [Electronics Prototyping Lab][epl].
+I have Bachelor's degrees in mechanical engineering and physics from Portland State University.
 I'm passionate about aerospace, interdisciplinary engineering, and open source technology.
 
 ```{r, child="bulletin.Rmd"}
@@ -23,3 +24,5 @@ I'm passionate about aerospace, interdisciplinary engineering, and open source t
 [lv3-paper]: http://arc.aiaa.org/doi/pdf/10.2514/6.2016-5365
 [pdt]: http://pacificdt.com/
 [epl]: https://psu-epl.github.io/
+[D2]: https://en.wikipedia.org/wiki/Dragon_2
+[docker]: https://en.wikipedia.org/wiki/NASA_Docking_System
