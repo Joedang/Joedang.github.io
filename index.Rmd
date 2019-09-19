@@ -1,4 +1,4 @@
-# Hi there, I'm Joe Shields.  <img src="../img/LV3.0_selfie.jpg" align="left" width="32%">
+# Hi there, I'm Joe Shields.  <img src="../img/LV3.0_selfie.jpg" align="left" width="32%" style="margin-right: 1ex">
 
 I'm an engineer with a broad skill set looking for work in the Pacific Northwest.
 
@@ -14,7 +14,6 @@ I'm passionate about aerospace, interdisciplinary engineering, and open source t
 
 ```{r, child="bulletin.Rmd"}
 ```
-
 
 [face]: ../img/LV3.0_selfie.jpg
 [psas]: http://psas.pdx.edu
