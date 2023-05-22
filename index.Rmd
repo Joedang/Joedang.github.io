@@ -1,8 +1,12 @@
 # Hi there, I'm Joe Shields.  <img src="../img/LV3.0_selfie.jpg" align="left" width="32%" style="margin-right: 1ex">
 
-I'm an engineer with a broad skill set looking for work in the Pacific Northwest.
+I'm an engineer with a broad skill set looking for either hybrid work in the Portland area or remote work.
 
-I just left a manufacturing engineer role at SpaceX, working on the [docking system][docker] for [Dragon 2][D2]. 
+I'm currently working at a university group in Baltimore, designing airborne and spaceborne scientific instruments.
+I'm also doing optomechanical design at our spinoff company. 
+Both groups have a heavy focus on measuring the polarization and intensity of scattered light at different wavelengths to infer properties about aerosols.
+
+In 2019, I left a manufacturing engineer role at SpaceX, working on the [docking system][docker] for [Dragon 2][D2]. 
 I was the mechanical lead for a number of small engineering groups in the Portland area.
 These include: 
 [Oregon's first satellite][oresat], 
@@ -10,7 +14,12 @@ the [Portland State Aerospace Society][psas]'s [all-composite rocket airframe][l
 and [Pacific Diabetes Technologies][pdt].
 I also volunteered for PSU's [Electronics Prototyping Lab][epl].
 I have Bachelor's degrees in mechanical engineering and physics from Portland State University.
-I'm passionate about aerospace, interdisciplinary engineering, and open source technology.
+
+I'm passionate about interdisciplinary engineering and open source technology.
+My special talent is coming up with elegant solutions to complex problems.
+Most of my experience is in aerospace, not because I have any particular attachment to the industry, 
+but because it attracts people who are interesting to work with.
+I try to only to work that makes the world a little less awful. 
 
 ```{r, child="bulletin.Rmd"}
 ```

@@ -4,7 +4,7 @@ exclude: [ "makefile", "README.md", "pdfThumbnail.sh" ]
 output_dir: "."
 output:
   html_document:
-    theme: sandstone
+    theme: cosmo
     type: inverse
     mathjax: null
     css: css/styles.css
@@ -18,7 +18,7 @@ navbar:
       menu:
         - text: "Resume"
           href: https://github.com/Joedang/Resume/raw/master/resume.pdf
-        - text: "Portfolio"
+        - text: "Github"
           href: https://github.com/Joedang
         - text: "Curriculum Vitae"
           href: https://github.com/Joedang/Resume/raw/master/CV/CV.pdf
@@ -26,13 +26,17 @@ navbar:
           href: imgGallery.html
         - text: "CAD Gallery"
           href: cadGallery.html
+    - text: "Portfolio"
+      href: portfolio.html
     - text: "Contact"
       menu:
         - text: "personal email"
           href: mailto:joedang100@gmail.com
-        - text: "PSU email"
-          href: mailto:shields6@pdx.edu
-        - text: "public key"
+        - text: "UMBC email"
+          href: mailto:joe.shields@umbc.edu
+        - text: "AirPhoton email"
+          href: mailto:shields@airphoton.com
+        - text: "PGP public key"
           href: joedang100_publicKey.txt
         - text: "LinkedIn"
           href: https://www.linkedin.com/in/joe-shields

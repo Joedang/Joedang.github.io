@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Portfolio</title>
+
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Joe Shields</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Info
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/Joedang/Resume/raw/master/resume.pdf">Resume</a>
+    </li>
+    <li>
+      <a href="https://github.com/Joedang">Github</a>
+    </li>
+    <li>
+      <a href="https://github.com/Joedang/Resume/raw/master/CV/CV.pdf">Curriculum Vitae</a>
+    </li>
+    <li>
+      <a href="imgGallery.html">Image Gallery</a>
+    </li>
+    <li>
+      <a href="cadGallery.html">CAD Gallery</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="portfolio.html">Portfolio</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Contact
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="mailto:joedang100@gmail.com">personal email</a>
+    </li>
+    <li>
+      <a href="mailto:joe.shields@umbc.edu">UMBC email</a>
+    </li>
+    <li>
+      <a href="mailto:shields@airphoton.com">AirPhoton email</a>
+    </li>
+    <li>
+      <a href="joedang100_publicKey.txt">PGP public key</a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/joe-shields">LinkedIn</a>
+    </li>
+    <li>
+      <a href="https://github.com/Joedang">GitHub</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Portfolio</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#megaharp-lots-of-fancy-polarimetric-cameras-in-space"
+id="toc-megaharp-lots-of-fancy-polarimetric-cameras-in-space">MegaHARP:
+Lots of Fancy Polarimetric Cameras in Space</a></li>
+<li><a href="#imap-inverse-multi-polarimetric-nephelometer"
+id="toc-imap-inverse-multi-polarimetric-nephelometer">IMAP: Inverse
+Multi-Polarimetric Nephelometer</a></li>
+<li><a href="#airharp2-fancy-cameras-crammed-in-a-box-in-an-airplane"
+id="toc-airharp2-fancy-cameras-crammed-in-a-box-in-an-airplane">AirHARP2:
+Fancy Cameras Crammed in a Box in an Airplane</a></li>
+<li><a href="#itopie-3d-printer" id="toc-itopie-3d-printer">iTopie 3D
+Printer</a></li>
+<li><a href="#dragon-2-docking-system"
+id="toc-dragon-2-docking-system">Dragon 2 Docking System</a></li>
+<li><a href="#artificial-pancreas"
+id="toc-artificial-pancreas">Artificial Pancreas</a></li>
+<li><a href="#fidget-toys" id="toc-fidget-toys">Fidget Toys</a></li>
+<li><a href="#oresat-oregons-first-satellite"
+id="toc-oresat-oregons-first-satellite">OreSat: Oregon’s First
+Satellite</a></li>
+<li><a href="#lv3-a-huge-amateur-rocket"
+id="toc-lv3-a-huge-amateur-rocket">LV3: A Huge Amateur Rocket</a></li>
+</ul>
+</div>
+
+<p>A lot of my recent work has been proprietary. While most of it has
+not been under an NDA, I feel it may be unethical to share certain
+details.</p>
+<p>My work obviously has an aerospace theme, but please don’t think of
+me as an “aerospace engineer”. I’m really an artist pretending to be a
+scientist pretending to be an engineer. I just like solving problems
+which intersect many domains, and aerospace has a few of those
+problems.</p>
+<div id="megaharp-lots-of-fancy-polarimetric-cameras-in-space"
+class="section level2">
+<h2>MegaHARP: Lots of Fancy Polarimetric Cameras in Space</h2>
+<p>This is the next evolution of the <a
+href="https://esi.umbc.edu/harp2-project/">HARP</a> instruments. NASA
+Goddard reached out to us to do a study on the cost, performance, and
+many other parameters of a polarimeter for an upcoming orbital
+observatory. The result of my work was a basline design that will likely
+become the basis for their eventual request-for-proposals and <a
+href="https://esi.umbc.edu/">ESI</a>’s corresponding proposal. It’s
+essentially four copies of HARP, looking at different portions of the
+spectrum with a narrower field of view.</p>
+<p>I acted as a systems engineer, coordinating our engineering efforts
+at ESI with the team at <a href="https://sdl.usu.edu/">SDL</a> working
+on the electronics. I created a detailed week-by-week Gantt chart of the
+funding, design, prototyping, building, testing, and delivery of this
+6-year-long, 20-million-dollar project. I designed optomechanical
+subsystems, including a radiometric self-calibration system, a filter
+wheel, lens baffles, and sensor/prism holding. I worked with our
+principal investigator, our thermal expert, and SDL to manage design
+tradeoffs between our different subsystems, and to estimate performance.
+Due to small changes in the requirements since the previous HARP, I got
+involved in the optical optimization process. I worked with NASA systems
+engineers to meet various checkpoints in the study and negotiate the
+overall observatory design.</p>
+<p>Initially, most of our estimates were based on some previous design
+work. However late in the study, we found a serious problem. Due to an
+oversight in some scaling laws, the mechanical layout of the system
+drove our thermal system up in mass, to the point that we couldn’t meet
+NASA’s rough initial requirements. Over the course of about three days,
+I took advantage of my ability to <a
+href="https://en.wikipedia.org/wiki/Hyperfocus">hyperfocus</a> and
+redesigned the entire structure, thermal system, and internal layout.
+This simplified the electronics and made the thermal system viable,
+essentially saving the study and greatly improving ESI’s odds of
+securing the eventual contract. Given the tight time constraints on this
+redesign, I don’t think it would have been possible without
+hyperfocus.</p>
+<p>With the radiometric self-calibration system, I misunderstood the
+design concept of a previous self-calibration system. So, when I
+designed the new system, I accidentally used a different architecture
+which ended up being more efficient than the previous design.</p>
+<p>I really enjoyed the autonomy I had with this project, and the
+experience of managing design constraints among many subject experts. It
+was a great opportunity to stretch my wings as a designer and just come
+up with <em>anything</em> that might work. NASA provided a clear
+schedule and set of requirements for the study, which avoided a lot of
+potential anxiety for me.</p>
+</div>
+<div id="imap-inverse-multi-polarimetric-nephelometer"
+class="section level2">
+<h2>IMAP: Inverse Multi-Polarimetric Nephelometer</h2>
+<p>This constituted the vast majority of my work at <a
+href="https://www.airphoton.com/">AirPhoton</a>. By measuring the
+intensity and polarization of scattered light at different angles and
+colors, it measures aerosol and gas content as well as particle size and
+material. The system was designed to operate outdoors continuously for
+years.</p>
+<p>I did the conceptual design and detailed design of the core optics
+and setup the automation and firewall of the Linux system driving it. I
+found a symmetry I could add (and another I could remove), which our
+principal investigator had not realized, to the optical layout which cut
+the overall size of the optics in half. In the subassembly which
+collimates three coaxial laser beams of different wavelengths, I found
+an arrangement of apertures which collimates the beams and catches the
+diffracted light from each beam. Importantly, this new arrangement was
+half the size of the previous design. I designed parts to hold and route
+optical fibers throughout the instrument. I designed pneumatic seals
+between all the parts of the core instrument. I also designed a simple
+camera within the instrument.</p>
+<p>I worked closely with another physicist, who did the benchtop
+validation of the optics I designed. I also worked closely with another
+mechanical engineer, who designed the enclosure, the mounting for the
+supporting electrical and pneumatic equipment, and the mounting for the
+core instrument. We had minimal supervision from our principal
+investigator. We held check-ins every two weeks to make sure we were
+following his vision for the system and to pry design constraints out of
+him.</p>
+<p>I really enjoyed the team dynamic on this project. We worked
+autonomously and had a clear understanding of our responsibilities and
+system boundaries. Thanks to carefully planned interfaces and <a
+href="https://en.wikipedia.org/wiki/Design_for_assembly">DFA</a>, when
+we needed to integrate the system, all the mechanics Just Worked™.
+However, poor communication of project expectations and dishonesty about
+the schedule caused me a lot of anxiety and frustration. In combination
+with the PI’s refusal to accommodate my mental health needs (via remote
+work), this led to my resignation after the first few units shipped.</p>
+</div>
+<div id="airharp2-fancy-cameras-crammed-in-a-box-in-an-airplane"
+class="section level2">
+<h2>AirHARP2: Fancy Cameras Crammed in a Box in an Airplane</h2>
+<p>This is a collection of custom and off-the-shelf instruments,
+packaged into independent modules which can be flown on many aircraft.
+It will initially be flown on NASA’s <a
+href="https://airbornescience.nasa.gov/aircraft/Gulfstream_V_-_JSC">Gulfsrteam
+V</a> and <a
+href="https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html">ER-2</a>
+in support of <a href="https://pace.gsfc.nasa.gov/">PACE</a>.</p>
+<p>The instruments are a SWIR camera, a polarimeter similar to <a
+href="https://esi.umbc.edu/harp2-project/">HARP</a>, an off-the-shelf
+VNIR spectrometer, and a UV camera. I designed the SWIR camera, and the
+majority of the structure.</p>
+<p>The SWIR camera includes a lens assembly which is wide-angle on the
+subject end and telecentric on the sensor end. It also includes a filter
+wheel. The sensor is the same as what’s used in <a
+href="https://www.oresat.org/">OreSat</a>.</p>
+</div>
+<div id="itopie-3d-printer" class="section level2">
+<h2>iTopie 3D Printer</h2>
+<p>After graduating, I had unrestricted access to a laser cutter for
+about two years. That got me hooked on rapid prototyping and design. I
+really wanted some kind of CNC machine of my own, but I couldn’t afford
+a laser cutter. So, I decided to build my own 3D printer.</p>
+<p>The iTopie is an FDM printer I built following <a
+href="https://reprap.org/wiki/ITopie">a reprap design</a>. The original
+design used an MDF frame cut on a CNC router. I didn’t have access to a
+CNC router. So, I modified the design to use thinner plates of laser-cut
+MDF, which I laminated together.</p>
+<p>I sourced the COTS parts from AliExpress, because I had a tight
+budget. I sourced the printed parts from 3D Hubs and a local
+makerspace.</p>
+<p>I did the assembly during COVID lockdown, and encountered a lot of
+design and fitment issues with the printed parts. I was able to fix
+enough of the parts with epoxy and fiberglass to get it into a working
+state. From there, I was able to redesign the problematic parts and
+print new ones.</p>
+<p>At this point, the entire hotend is custom. It’s not perfect, but
+it’s good enough for my purposes and quite reliable.</p>
+</div>
+<div id="dragon-2-docking-system" class="section level2">
+<h2>Dragon 2 Docking System</h2>
+<p>I worked as a manufacturing engineer for the docking system of
+SpaceX’s <a href="https://en.wikipedia.org/wiki/SpaceX_Dragon_2">Dragon
+2 capsule</a>. I mainly supported the In-Flight Abort (IFA) and Demo-2
+units. Unfortunately, I can only show NASA-released pictures here, since
+all my work was export-controlled and NDA-covered.</p>
+<p>The IFA docking system was a mass simulator. It was built out of old
+engineering-unit parts and purpose-built mass simulators. So, I adapted
+manufacturing and testing work instructions from earlier units.</p>
+<p>The Demo-2 unit had increased water-sealing requirements. So, I spent
+a lot of time updating work instructions to include RTV sealing and
+vacuum grease.</p>
+<p>A responsibility common to both units was addressing issue tickets.
+Frequently, out-of-tolerance parts would be received, mistakes would be
+made during manufacturing, and engineering errors would be found. I
+would work with design engineers, quality engineers, an technicians to
+resolve these issues.</p>
+<p>Most of the job boiled down to chasing down the “source of truth” for
+information, tracking long lists of needed documentation changes, and
+creating visual assembly instructions.</p>
+</div>
+<div id="artificial-pancreas" class="section level2">
+<h2>Artificial Pancreas</h2>
+<p>At <a href="https://www.pacificdt.com/">Pacific Diabetes
+Technologies</a>, I worked on the mechanical design for a combined
+continuous glucose monitor and insulin pump. I won’t be sharing images
+of what I worked on, out of concern for the company.</p>
+<p>I worked closely with an electrical engineer and chemist to spiral in
+on the overall form of the device. Most of my time was spent designing
+the non-disposable electronics enclosure, and the structure for the
+disposable sensor/fluid-path. I prototyped designs using an <a
+href="https://www.3dsystems.com/multi-jet-printing">MJP</a> printer.</p>
+</div>
+<div id="fidget-toys" class="section level2">
+<h2>Fidget Toys</h2>
+<p>coming soon…</p>
+</div>
+<div id="oresat-oregons-first-satellite" class="section level2">
+<h2>OreSat: Oregon’s First Satellite</h2>
+<p>coming soon…</p>
+</div>
+<div id="lv3-a-huge-amateur-rocket" class="section level2">
+<h2>LV3: A Huge Amateur Rocket</h2>
+<p>coming soon…</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>
